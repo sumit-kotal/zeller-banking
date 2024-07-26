@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.transactionsRecyclerView.adapter = transactionsAdapter
     }
 
-    private fun setupObservers() {
+    fun setupObservers() {
         lifecycleScope.launch {
             mainViewModel.userAccount.collect { userAccount ->
                 binding.balance.text = userAccount.balance.toString()

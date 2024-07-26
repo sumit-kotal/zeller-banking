@@ -1,6 +1,7 @@
 package com.zeller.terminalapp.di
 
-import com.zeller.terminalapp.domain.repository.UserRepository
+import com.zeller.terminalapp.domain.UserRepository
+import com.zeller.terminalapp.domain.UserRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -12,6 +13,6 @@ object AppModule {
 
     @Provides
     fun provideUserRepository(): UserRepository {
-        return UserRepository()
+        return UserRepositoryImpl()
     }
 }

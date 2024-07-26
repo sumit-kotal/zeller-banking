@@ -1,6 +1,6 @@
 package com.zeller.terminalapp.data.model
 
-class Transactions(
-    val amount: Float,
-    val isDeposit: Boolean
+data class Transactions(
+    val isDeposit: Boolean,
+    val amount: Float
 )

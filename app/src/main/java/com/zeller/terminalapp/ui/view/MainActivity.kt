@@ -1,9 +1,12 @@
-package com.zeller.terminalapp
+package com.zeller.terminalapp.ui.view
 
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.zeller.terminalapp.ui.viewmodel.MainViewModel
+import com.zeller.terminalapp.R
+import com.zeller.terminalapp.data.model.Transactions
 import com.zeller.terminalapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {

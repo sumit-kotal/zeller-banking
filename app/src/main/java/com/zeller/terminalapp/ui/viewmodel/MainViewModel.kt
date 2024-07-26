@@ -1,8 +1,13 @@
 package com.zeller.terminalapp.ui.viewmodel
 
-import com.zeller.terminalapp.ui.view.TransactionsList
+import androidx.lifecycle.ViewModel
+import com.zeller.terminalapp.domain.repository.UserRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-object MainViewModel {
-    var balance = 0.0f
-    var transactions: TransactionsList = TransactionsList()
+@HiltViewModel
+class MainViewModel @Inject constructor(
+    private val userRepository: UserRepository
+) : ViewModel() {
+
 }
